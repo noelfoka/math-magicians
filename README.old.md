@@ -171,8 +171,6 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
-- [ ] **Math magicians: components**
 - [ ] **Math magicians: events**
 - [ ] **Math magicians: fetch data from API**
 
