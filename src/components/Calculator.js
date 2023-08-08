@@ -3,7 +3,9 @@ import './Calculator.css';
 
 const Calculator = () => (
   <div className="calculator">
-    <div className="cal-answer" />
+    <div className="cal-answer">
+      <div className="answer">0</div>
+    </div>
     <button type="button" value="AC">
       AC
     </button>
