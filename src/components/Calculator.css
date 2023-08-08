@@ -1,0 +1,40 @@
+body {
+  margin: 6rem 0 0 20rem;
+}
+
+.calculator {
+  display: grid;
+  grid-template-rows: minmax(4rem, 1fr) repeat(5, 1fr);
+  grid-template-columns: repeat(4, 5rem);
+  padding: 5px;
+}
+
+.cal-answer {
+  grid-column: 1 / span 4;
+  background-color: rgba(179, 173, 173, 0.616);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 5px;
+  margin-right: 1px;
+}
+
+.sign,
+.assign {
+  background-color: rgba(255, 115, 0, 0.94);
+}
+
+.sign:hover,
+.assign:hover {
+  background-color: rgba(255, 166, 0, 0.438);
+}
+
+.zero {
+  grid-column: 1 / span 2;
+  cursor: pointer !important;
+}
+
+button {
+  margin: 1px;
+  font-size: 1.3rem;
+}
