@@ -1,69 +1,63 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Button from './Button';
+import DisplayAnswer from './DisplayAnswer';
 import './Calculator.css';
 
-const Calculator = () => (
-  <div className="calculator">
-    <div className="cal-answer">
-      <div className="answer">0</div>
+const Calculator = () => {
+  const answer = useState('0');
+
+  const handleButtonClick = () => {
+    // Handle button click logic here
+  };
+
+  return (
+    <div className="calculator">
+      <DisplayAnswer answer={answer} />
+      <Button value="AC" onClick={() => handleButtonClick('AC')} />
+      <Button value="+/-" onClick={() => handleButtonClick('+/-')} />
+      <Button value="%" onClick={() => handleButtonClick('%')} />
+      <Button
+        className="sign"
+        value="/"
+        onClick={() => handleButtonClick('/')}
+      />
+      <Button value="7" onClick={() => handleButtonClick('7')} />
+      <Button value="8" onClick={() => handleButtonClick('8')} />
+      <Button value="9" onClick={() => handleButtonClick('9')} />
+      <Button
+        className="sign"
+        value="x"
+        onClick={() => handleButtonClick('*')}
+      />
+      <Button value="4" onClick={() => handleButtonClick('4')} />
+      <Button value="5" onClick={() => handleButtonClick('5')} />
+      <Button value="6" onClick={() => handleButtonClick('6')} />
+      <Button
+        className="sign"
+        value="-"
+        onClick={() => handleButtonClick('-')}
+      />
+      <Button value="1" onClick={() => handleButtonClick('1')} />
+      <Button value="2" onClick={() => handleButtonClick('2')} />
+      <Button value="3" onClick={() => handleButtonClick('3')} />
+      <Button
+        className="sign"
+        value="+"
+        onClick={() => handleButtonClick('+')}
+      />
+      <Button
+        className="zero"
+        value="0"
+        onClick={() => handleButtonClick('0')}
+      />
+      <Button value="." onClick={() => handleButtonClick('.')} />
+      <Button
+        className="sign"
+        value="="
+        onClick={() => handleButtonClick('=')}
+      />
     </div>
-    <button type="button" value="AC">
-      AC
-    </button>
-    <button type="button" value="+/-">
-      +/-
-    </button>
-    <button type="button" value="%">
-      %
-    </button>
-    <button className="sign" type="button" value="/">
-      /
-    </button>
-    <button type="button" value="7">
-      7
-    </button>
-    <button type="button" value="8">
-      8
-    </button>
-    <button type="button" value="9">
-      9
-    </button>
-    <button className="sign" type="button" value="x">
-      x
-    </button>
-    <button type="button" value="4">
-      4
-    </button>
-    <button type="button" value="5">
-      5
-    </button>
-    <button type="button" value="6">
-      6
-    </button>
-    <button className="sign" type="button" value="-">
-      -
-    </button>
-    <button type="button" value="1">
-      1
-    </button>
-    <button type="button" value="2">
-      2
-    </button>
-    <button type="button" value="3">
-      3
-    </button>
-    <button className="sign" type="button" value="+">
-      +
-    </button>
-    <button className="zero" type="button" value="0">
-      0
-    </button>
-    <button type="button" value=".">
-      .
-    </button>
-    <button className="assign" type="button" value="=">
-      =
-    </button>
-  </div>
-);
+  );
+};
 
 export default Calculator;
