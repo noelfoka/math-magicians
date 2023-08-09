@@ -1,0 +1,33 @@
+.quote-container {
+  background-color: rgb(255, 119, 0);
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 20rem;
+  border: 2px solid aquamarine;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+p {
+  font-size: 24px;
+  text-align: center;
+  height: 1rem;
+  top: 10px;
+  font-family: Helvetica, sans-serif;
+  line-height: 35px;
+  color: blanchedalmond;
+}
+
+.question {
+  color: aquamarine;
+  font-size: 30px;
+}
+
+hr {
+  height: 4px;
+  background-color: brown;
+  border: 1px solid brown;
+  width: 40%;
+  border-radius: 4px;
+}
