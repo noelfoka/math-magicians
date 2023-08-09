@@ -1,17 +1,14 @@
-import { Component } from 'react';
-import Calculator from './components/Calculator';
-import Quote from './components/Quotes';
+import Calculator from "./components/Calculator";
+import Quote from "./components/Quotes";
+import App from "./App";
 
-// eslint-disable-next-line react/prefer-stateless-function
-class App extends Component {
-  render() {
-    return (
-      <>
-        <Quote />
-        <Calculator />
-      </>
-    );
-  }
+function App() {
+  return (
+    <div>
+      <Quote />
+      <Calculator />
+    </div>
+  );
 }
 
 export default App;
