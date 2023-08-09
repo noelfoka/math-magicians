@@ -2,14 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Calculator.css';
 
-const DisplayAnswer = ({ answer }) => (
+const DisplayAnswer = ({ next, total }) => (
   <div className="cal-answer">
-    <div className="answer">{answer}</div>
+    <div className="answer">
+      {next ? (
+        <div className="answer">{next.toString()}</div>
+      ) : (
+        <div className="answer">{total.toString()}</div>
+      )}
+    </div>
   </div>
 );
 
 DisplayAnswer.propTypes = {
-  answer: PropTypes.string.isRequired,
+  next: PropTypes.string,
+  total: PropTypes.string,
+};
+
+DisplayAnswer.defaultProps = {
+  next: null,
+  total: null,
 };
 
 export default DisplayAnswer;
