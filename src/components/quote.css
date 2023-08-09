@@ -1,7 +1,8 @@
 .quote-container {
-  background-color: rgb(255, 119, 0);
+  background-color: rgb(187, 0, 255);
   justify-content: center;
   align-items: center;
+  box-shadow: 20px 20px 50px 10px pink inset;
   width: 60%;
   height: 20rem;
   border: 2px solid aquamarine;
