@@ -3,6 +3,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: #96939b;
   padding: 2% 5%;
   border-radius: 50px;
@@ -25,7 +26,7 @@
 
 .navbar nav ul li a {
   text-decoration: none;
-  font-family: 'Dancing Script', cursive;
+  font-family: cursive;
 }
 
 .navbar nav ul li a:hover {
@@ -34,5 +35,5 @@
 }
 
 .navbar h1 {
-  font-family: 'Dancing Script', cursive;
+  font-family: cursive;
 }

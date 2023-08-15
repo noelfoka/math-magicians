@@ -1,6 +1,6 @@
-body {
+/* body {
   margin: 6rem 0 0 20rem;
-}
+} */
 
 .calculator {
   display: grid;
@@ -22,6 +22,8 @@ body {
 .answer {
   font-size: 2rem;
   color: rgb(255, 255, 255);
+  width: 19.5rem;
+  height: 2.9rem;
 }
 
 .sign,
