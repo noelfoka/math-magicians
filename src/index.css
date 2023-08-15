@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: auto;
+  margin: auto 0;
   padding: 0;
 }
 
@@ -8,9 +8,7 @@ body {
   line-height: 1.4;
   color: #474747;
   height: 100%;
-  padding: 1.3rem 1.6rem 0 1.6rem;
   background: #bfbfbf4f;
-  margin-left: auto;
 }
 
 .active {
