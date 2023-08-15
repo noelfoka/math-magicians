@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Barlow:wght@400;500;600;700&family=Dancing+Script:wght@700&family=Lato:wght@300&family=Martel:wght@200;300&family=Pacifico&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #96939b;
+  padding: 2% 5%;
+  border-radius: 50px;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar nav ul {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar nav ul li {
+  list-style: none;
+  font-size: 40px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  font-family: 'Dancing Script', cursive;
+}
+
+.navbar nav ul li a:hover {
+  background-color: #cccace;
+  border-radius: 10px;
+}
+
+.navbar h1 {
+  font-family: 'Dancing Script', cursive;
+}

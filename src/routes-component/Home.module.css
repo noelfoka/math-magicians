@@ -1,0 +1,16 @@
+.home {
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+.home p {
+  line-height: 30px;
+}
