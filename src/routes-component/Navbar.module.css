@@ -21,7 +21,7 @@
 .navbar nav ul {
   display: flex;
   gap: 10px;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .navbar nav ul li {
@@ -43,5 +43,5 @@
 .navbar h1 {
   font-family: cursive;
   font-size: 30px;
-  margin-left: 10px;
+  margin-left: 70px;
 }
