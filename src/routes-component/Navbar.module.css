@@ -4,9 +4,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #96939b;
+  background: #3026407a;
   padding: 2% 5%;
-  border-radius: 50px;
+  border-radius: 15px;
 }
 
 .navbar nav {
