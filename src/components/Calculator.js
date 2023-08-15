@@ -1,30 +1,25 @@
-import React, { Component } from 'react';
 import './Calculator.css';
+import { useState } from 'react';
 import calculate from '../logic/calculate';
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: 0,
-      next: 0,
-      operation: 0,
-    };
-    this.clickEvent = this.clickEvent.bind(this);
-  }
+const Calculator = () => {
+  const [answer, setAnswer] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-  clickEvent(event) {
+  const clickEvent = (event) => {
     if (!event.target.value) return;
-    const { total, next, operation } = calculate(
-      this.state,
-      event.target.value,
-    );
-    this.setState({ total, next, operation });
-  }
+    const { total, next, operation } = calculate(answer, event.target.value);
+    setAnswer({ total, next, operation });
+  };
 
-  render() {
-    const { next, total } = this.state;
-    return (
+  const { total, next } = answer;
+
+  return (
+    <div className="aside" data-testid="cal-answer">
+      <h2>LET&#39;S DO SOME MATHS!</h2>
       <div className="calculator">
         <div className="cal-answer">
           {next ? (
@@ -33,96 +28,77 @@ class Calculator extends Component {
             <div className="answer">{total}</div>
           )}
         </div>
-        <button type="button" value="AC" onClick={this.clickEvent}>
+        <button type="button" value="AC" onClick={clickEvent}>
           AC
         </button>
-        <button type="button" value="+/-" onClick={this.clickEvent}>
+        <button type="button" value="+/-" onClick={clickEvent}>
           +/-
         </button>
-        <button type="button" value="%" onClick={this.clickEvent}>
+        <button type="button" value="%" onClick={clickEvent}>
           %
         </button>
-        <button
-          className="sign"
-          type="button"
-          value="÷"
-          onClick={this.clickEvent}
-        >
+        <button className="sign" type="button" value="÷" onClick={clickEvent}>
           ÷
         </button>
-        <button type="button" value="7" onClick={this.clickEvent}>
+        <button type="button" value="7" onClick={clickEvent}>
           7
         </button>
-        <button type="button" value="8" onClick={this.clickEvent}>
+        <button type="button" value="8" onClick={clickEvent}>
           8
         </button>
-        <button type="button" value="9" onClick={this.clickEvent}>
+        <button type="button" value="9" onClick={clickEvent}>
           9
         </button>
-        <button
-          className="sign"
-          type="button"
-          value="x"
-          onClick={this.clickEvent}
-        >
+        <button className="sign" type="button" value="x" onClick={clickEvent}>
           x
         </button>
-        <button type="button" value="4" onClick={this.clickEvent}>
+        <button type="button" value="4" onClick={clickEvent}>
           4
         </button>
-        <button type="button" value="5" onClick={this.clickEvent}>
+        <button type="button" value="5" onClick={clickEvent}>
           5
         </button>
-        <button type="button" value="6" onClick={this.clickEvent}>
+        <button type="button" value="6" onClick={clickEvent}>
           6
         </button>
-        <button
-          className="sign"
-          type="button"
-          value="-"
-          onClick={this.clickEvent}
-        >
+        <button className="sign" type="button" value="-" onClick={clickEvent}>
           -
         </button>
-        <button type="button" value="1" onClick={this.clickEvent}>
+        <button type="button" value="1" onClick={clickEvent}>
           1
         </button>
-        <button type="button" value="2" onClick={this.clickEvent}>
+        <button type="button" value="2" onClick={clickEvent}>
           2
         </button>
-        <button type="button" value="3" onClick={this.clickEvent}>
+        <button type="button" value="3" onClick={clickEvent}>
           3
         </button>
-        <button
-          className="sign"
-          type="button"
-          value="+"
-          onClick={this.clickEvent}
-        >
+        <button className="sign" type="button" value="+" onClick={clickEvent}>
           +
         </button>
         <button
           className="number zero"
           type="button"
           value="0"
-          onClick={this.clickEvent}
+          onClick={clickEvent}
         >
           0
         </button>
-        <button type="button" value="." onClick={this.clickEvent}>
+        <button type="button" value="." onClick={clickEvent}>
           .
         </button>
         <button
           className="assign"
           type="button"
           value="="
-          onClick={this.clickEvent}
+          onClick={clickEvent}
+          data-testid="answer"
         >
           =
         </button>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Calculator;

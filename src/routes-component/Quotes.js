@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './quote.css';
+import styles from './Quotes.module.css';
 
 const Quote = () => {
   const apiUrl = 'https://api.api-ninjas.com/v1/quotes';
@@ -34,13 +34,13 @@ const Quote = () => {
 
   return (
     <>
-      <div className="quote-container">
-        <p className="question">I love this very motivational statement:</p>
+      <div className={styles.quotes}>
+        <h1 className="question">I love this very motivational statement:</h1>
         <hr />
         {isLoading && <p>Loading...</p>}
         {hasError && <p>Something went wrong!</p>}
 
-        {quoteText && <p className="quote">{quoteText}</p>}
+        {quoteText && <p className={styles.quote}>{quoteText}</p>}
       </div>
     </>
   );

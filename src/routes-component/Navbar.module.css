@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Barlow:wght@400;500;600;700&family=Dancing+Script:wght@700&family=Lato:wght@300&family=Martel:wght@200;300&family=Pacifico&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1% 0;
+  width: 100%;
+  top: 0;
+  box-shadow: 20px 20px 50px 10px whitesmoke;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  margin: 10px;
+}
+
+.navbar nav ul {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.navbar nav ul li {
+  list-style: none;
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  font-family: cursive;
+}
+
+.navbar nav ul li a:hover {
+  background-color: #cccace;
+  border-radius: 10px;
+}
+
+.navbar h1 {
+  font-family: cursive;
+  font-size: 30px;
+  margin-left: 70px;
+}

@@ -1,0 +1,20 @@
+.quotes {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quote {
+  list-style: none;
+  font-style: italic;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: cursive;
+}
+
+.quotes h1 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+}
