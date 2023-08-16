@@ -170,7 +170,7 @@ You can deploy this project using:
 
 - GitHub: [github](https://github.com/boniface193)
 - Twitter: [twitter](https://twitter.com/)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in//)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/boniface-ikechukwu/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
