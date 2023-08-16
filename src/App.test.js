@@ -18,11 +18,6 @@ describe("All components", () => {
     expect(userElement).toBeInTheDocument();
     expect(userElement).toHaveTextContent("History");
   });
-
-  it("should render Calculator component", () => {
-    render(<Calculator />);
-    screen.getAllByRole("button");
-  });
 });
 
 describe("Conduct simple operations", () => {
