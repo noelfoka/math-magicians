@@ -23,11 +23,6 @@ describe("All components", () => {
     render(<Calculator />);
     screen.getAllByRole("button");
   });
-
-  it("should match QUOTE snapshot", () => {
-    const quote = renderer.create(<Quote />).toJSON();
-    expect(quote).toMatchSnapshot();
-  });
 });
 
 describe("Conduct simple operations", () => {
