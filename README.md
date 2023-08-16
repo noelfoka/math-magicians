@@ -165,6 +165,13 @@ You can deploy this project using:
 - Twitter: [@noelnomgne](https://twitter.com/noelnomgne)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/no%C3%ABl-nomgne-foka-063013231/)
 
+  
+👤 **Dennis**
+
+- GitHub: [github](https://github.com/boniface193)
+- Twitter: [twitter](https://twitter.com/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in//)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
