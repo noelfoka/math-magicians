@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import userEvent from '@testing-library/user-event';
 import Calculator from './components/Calculator';
 import Home from './routes-component/Home';
-import Quotes from './routes-component/Quotes';
+import Quote from './routes-component/Quotes';
 import operate from './logic/operate';
 import calculate from './logic/calculate';
 
@@ -24,9 +24,14 @@ describe('All components', () => {
     screen.getAllByRole('button');
   });
 
-  it('should match QUOTES snapshot', () => {
-    const quotes = renderer.create(<Quotes />).toJSON();
-    expect(quotes).toMatchSnapshot();
+  it('should match HOME snapshot', () => {
+    const home = renderer.create(<Home />).toJSON();
+    expect(home).toMatchSnapshot();
+  });
+
+  it('should match QUOTE snapshot', () => {
+    const quote = renderer.create(<Quote />).toJSON();
+    expect(quote).toMatchSnapshot();
   });
 });
 

@@ -33,16 +33,14 @@ const Quote = () => {
   }, [category]);
 
   return (
-    <>
-      <div className={styles.quotes}>
-        <h1 className="question">I love this very motivational statement:</h1>
-        <hr />
-        {isLoading && <p>Loading...</p>}
-        {hasError && <p>Something went wrong!</p>}
+    <div className={styles.quotes}>
+      <h1>I love this very motivational statement:</h1>
+      <hr />
+      {isLoading && <p>Loading...</p>}
+      {hasError && <p>Something went wrong!</p>}
 
-        {quoteText && <p className={styles.quote}>{quoteText}</p>}
-      </div>
-    </>
+      {quoteText && <p className={styles.quote}>{quoteText}</p>}
+    </div>
   );
 };
 
