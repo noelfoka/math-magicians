@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote component should match QUOTE snapshot 1`] = `
+<div
+  className="quotes"
+>
+  <h1>
+    I love this very motivational statement:
+  </h1>
+  <hr />
+  <p>
+    Loading...
+  </p>
+</div>
+`;
